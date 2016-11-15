@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'VostockProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'WiggyBennett$Vostock',
-        'USER': 'WiggyBennett',
-        'PASSWORD': 'abbigale',
-        'HOST': 'WiggyBennett.mysql.pythonanywhere-services.com',
+        'NAME': 'django',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
     }
 }
 
@@ -126,12 +126,7 @@ STATIC_URL = '/static/'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/WiggyBennett/VostockProject/media'
+MEDIA_ROOT = u'/home/WiggyBennett/VostockProject/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/WiggyBennett/VostockProject/static'
+STATIC_ROOT = u'/home/WiggyBennett/VostockProject/static'
 STATIC_URL = '/static/'
-
-try:
-    from .settings_local import *
-except ImportError:
-    pass
