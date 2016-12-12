@@ -1,2 +1,4 @@
-# Vostock
-A simple stock control system for complex products
+# Batchof1
+Simple stock control for complex products
+
+
