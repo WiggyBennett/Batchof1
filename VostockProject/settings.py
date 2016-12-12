@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8628k0p=6ej&dz87e5o!a^-2_efot3$94j7u*_e+i2y&7%*8(2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'VostockProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'WiggyBennett$Vostock',
         'USER': 'WiggyBennett',
         'PASSWORD': 'abbigale',

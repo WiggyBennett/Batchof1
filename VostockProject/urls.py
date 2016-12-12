@@ -20,5 +20,6 @@ from .VostockApp import views as myapp_views
 
 urlpatterns = [
     url(r'^$', myapp_views.home, name='home'),
+    url(r'^learn/$', myapp_views.learn, name='learn'),
     url(r'^admin/', admin.site.urls),
 ]
