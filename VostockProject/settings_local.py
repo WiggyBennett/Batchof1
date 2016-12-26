@@ -56,7 +56,7 @@ ROOT_URLCONF = 'VostockProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/wiggybennett/PycharmProjects/Batchof1/VostockProject/templates'],
+        'DIRS': ['/Users/waynebennett/PycharmProjects/Batchof1/VostockProject/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'root',
         'HOST': '127.0.0.1',
     }
 }
