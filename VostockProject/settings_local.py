@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8628k0p=6ej&dz87e5o!a^-2_efot3$94j7u*_e+i2y&7%*8(2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.batchof1.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'VostockProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/wiggybennett/PycharmProjects/Batchof1/VostockProject/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'VostockProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'WiggyBennett$Vostock',
-        'USER': 'WiggyBennett',
-        'PASSWORD': 'abbigale',
-        'HOST': 'WiggyBennett.mysql.pythonanywhere-services.com',
+        'NAME': 'django',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
     }
 }
 
@@ -126,12 +126,7 @@ STATIC_URL = '/static/'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/WiggyBennett/Batchof1Project/media'
+MEDIA_ROOT = u'/home/WiggyBennett/VostockProject/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/WiggyBennett/Batchof1Project/static'
+STATIC_ROOT = u'/home/WiggyBennett/VostockProject/static'
 STATIC_URL = '/static/'
-
-try:
-    from .settings_local import *
-except ImportError:
-    pass
