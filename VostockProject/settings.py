@@ -25,7 +25,7 @@ SECRET_KEY = '8628k0p=6ej&dz87e5o!a^-2_efot3$94j7u*_e+i2y&7%*8(2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.batchof1.com']
 
 
 # Application definition
@@ -126,9 +126,9 @@ STATIC_URL = '/static/'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/WiggyBennett/VostockProject/media'
+MEDIA_ROOT = '/home/WiggyBennett/Batchof1Project/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/WiggyBennett/VostockProject/static'
+STATIC_ROOT = '/home/WiggyBennett/Batchof1Project/static'
 STATIC_URL = '/static/'
 
 try:
